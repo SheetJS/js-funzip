@@ -1,0 +1,13 @@
+{
+  "extends": "tslint:recommended",
+  "rules": {
+    "semicolon": [true, "always"],
+    "curly": false,
+    "max-line-length": false,
+    "no-bitwise": false,
+    "prefer-const": true,
+    "prefer-for-of": false,
+    "no-conditional-assignment": false,
+    "no-var-requires": false
+  }
+}

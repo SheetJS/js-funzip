@@ -1,0 +1,49 @@
+{
+	"name": "funzip",
+	"version": "0.0.1",
+	"author": "sheetjs",
+	"description": "Extract first file from a zip or gzip archive",
+	"keywords": [
+		"funzip",
+		"unzip",
+		"zip",
+		"gzip"
+	],
+	"bin": {
+		"funzip.njs": "./bin/funzip.njs"
+	},
+	"main": "./dist/index.js",
+	"dependencies": {
+		"crc-32": "~1.2.0",
+		"codepage": "~1.14.0",
+		"commander":"~2.16.0",
+		"concat-stream":"~1.6.2",
+		"exit-on-epipe":"~1.0.1",
+		"printj":"~1.1.2"
+	},
+	"devDependencies": {
+		"typescript": "~2.9.2",
+		"@types/node": "~10.5.2",
+		"@types/concat-stream": "~1.6.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/SheetJS/js-funzip.git"
+	},
+	"scripts": {
+		"build": "tsc",
+		"lint": "tslint lib/*.ts lib/*/*.ts"
+	},
+	"config": {
+		"blanket": {
+			"pattern": "funzip.js"
+		}
+	},
+	"bugs": {
+		"url": "https://github.com/SheetJS/js-funzip/issues"
+	},
+	"license": "Apache-2.0",
+	"engines": {
+		"node": ">=8.11"
+	}
+}
